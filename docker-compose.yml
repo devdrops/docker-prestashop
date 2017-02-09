@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  web:
+    image: prestashop/prestashop:1.6.1.11
+    env_file:
+      - .env
+    ports:
+      - "8080:80"
+      - "3307:3306"
